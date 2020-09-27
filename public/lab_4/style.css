@@ -1,5 +1,5 @@
 body {
-  background: rgba(192, 152, 245, 0.8);
+  background: rgba(210, 186, 242, 0.8);
   font-family: Arial, Helvetica, sans-serif;
   margin-right: auto;
   line-height: 1.5;
@@ -44,8 +44,8 @@ h3 {
 }
 
 .content {
-  background: #fff;
-  border: 2px dotted rgb(221, 221, 221);
+  background: rgb(228, 228, 228);
+  border: 2px dotted rgb(85, 84, 84);
   flex-grow: 2;
   flex: 0 0 200px;
   padding: 10px;
@@ -53,7 +53,7 @@ h3 {
 }
 
 .header {
-  background: rgba(192, 152, 245, 0.8);
+  background: rgba(170, 111, 247, 0.8);
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -124,7 +124,7 @@ label {
   border-radius: 2px;
 }
 .flex-inner li {
-  width: 75px;
+  width: 100px;
 }
 
 .flex-inner {
