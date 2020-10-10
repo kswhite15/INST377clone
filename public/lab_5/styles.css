@@ -5,12 +5,11 @@ body {
   
   .container {
     min-height: 100%;
-  }
-  
-  .wrapper {
     flex-direction: column;
     display: flex;
   }
+  
+  
   
   
   .header {

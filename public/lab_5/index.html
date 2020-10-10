@@ -14,7 +14,7 @@
     </div>
 
 
-    <div class="wrapper">
+
     <div class="container">
         
 
@@ -64,44 +64,53 @@
             </ul>
         </form>
     </div> 
-    </div>
+   
 
 
     <script>
-      
-    const btn = document.querySelector('button');
-    const head1 = document.querySelector('h1');
-    const fruit = document.querySelector(".checkbox-list-label");
-    const flexOut = document.querySelector(".flex-outer");
-    const bigFruit = document.querySelectorAll(".flex-inner label");
-    const fruitArr = Array.from(bigFruit);
-    const pageTitle = document.querySelector('title');
-    /* move stuff to Activate function */
-    /* or just keep it here, who cares*/
+      //pt.9
       function testFunction() {
-        fetch('/api')
-        .then((response) => response.text())
-        .then((response) => {
-            console.log(response);
-        })
+            fetch('/api')
+            .then((response) => response.text())
+            .then((response) =>{
+                const fruits  =['cherry', 'grape', 'apple']
+                const checks = document.querySelectorAll('.flex-inner li label')
+                console.log(checks.length, ckecks[0]);
+                checks.forEach(((check, i) => {
+                    console.log(check, i);
+                    checks.innerText = fruits[i];
 
-        document.body.style.backgroundColor = "#0080ff";
-        
-        const head1= document.querySelector('h1')
+                }))
+
+                // pt.10
+            
+                const head1= document.querySelector('h1')
                     head1.textContent="Lab 5 for Kennedy Whitehead";
                     }
-        
+               
+
+                //pt.11
+                document.body.style.background= blue;
+                
+                
+                //pt. 12
+                const margin = document.querySelectorAll('.flex-outer')
+                    margin.forEach(margin)=>{
+                    console.log(margin);
+                    margin.style ="margin: 0 auto;"
+
+                    }
+                
+                // pt.13
+                let checkboxfruit = document.querySelector('.checkbox-list-label')
+                let txt = checkboxfruit.innerText;
+                    checkboxfruit.forEach()
+                checkboxfruit.innerText = "Fruits"
+                console.log(txt)
+
+
+            }
     
-        
-        flexOut.style = "Margin: 0px auto;";
-        flexOut.style.marginRight = "101.75px";
-        flexOut.style.marginLeft = flexOut.style.marginRight;
-        
-        
-        fruit.innerHTML = "Fruits";
-
-
-    }
 
       function submission(){
         let a = document.getElementById("fname").value;
