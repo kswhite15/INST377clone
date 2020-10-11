@@ -2,15 +2,18 @@ body {
     background: rgba(210, 186, 242, 0.8);
   }
 
-  
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+
+
+  }
   .container {
     min-height: 100%;
-    flex-direction: column;
-    display: flex;
+  
   }
   
-  
-  
+ 
   
   .header {
 
