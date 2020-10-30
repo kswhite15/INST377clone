@@ -1,6 +1,6 @@
 /*CSS*/
 body {
-  background: #eee;
+  background: rgb(55, 99, 244);
 }
 
 .wrapper {
@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  color: #fff;
+  color: rgb(109, 160, 247);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -46,8 +46,8 @@ body {
 }
 
 .flex-outer button {
-  background-color: darkolivegreen;
-  color: white;
+  background-color: rgb(181, 245, 70);
+  color: rgb(9, 10, 1);
   padding: 6px 12px;
   border: none;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ h1 {
   margin: 20px 50px;
   padding: 0 20px;
   min-height: 75px;
-  background-color: darkolivegreen;
+  background-color: rgb(74, 157, 225);
   color: white;
   display: flex;
   
