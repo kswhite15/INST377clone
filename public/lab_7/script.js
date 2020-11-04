@@ -23,14 +23,14 @@ function convertRestaurantsToCategories(restaurantList) {
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
-  console.log("makeYourOptionsObject")
+  // eslint-disable-next-line no-console
+  console.log('makeYourOptionsObject');
   CanvasJS.addColorSet('customColorSet1', [
     '#2F4F4F',
     '#008080',
     '#2E8B57',
     '#3CB371',
     '#90EE90'
-
 
   ]);
 
@@ -49,27 +49,29 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
       gridColor: 'rgba(1,77,101,.1)',
       title: 'Change This Title',
       labelFontSize: 12,
-      scaleBreaks: {customBreaks: [
-        {
-          type: 'zigzag',
-          startValue: 40,
-          endValue: 50,
-          color: 'blue'
-        },
-        {
-          type: 'zigzag',
-          startValue: 85,
-          endValue: 100,
-          color: 'blue'
-        },
-        {
-          type: "zigzag",
-          startValue: 140,
-          endValue: 175,
-          color: 'blue'
-        }
+      scaleBreaks: {
+        customBreaks: [
+          {
+            type: 'zigzag',
+            startValue: 40,
+            endValue: 50,
+            color: 'blue'
+          },
+          {
+            type: 'zigzag',
+            startValue: 85,
+            endValue: 100,
+            color: 'blue'
+          },
+          {
+            type: 'zigzag',
+            startValue: 140,
+            endValue: 175,
+            color: 'blue'
+          }
 
-      ]} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+        ]
+      } // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
     },
     data: [{
       type: 'bar',
