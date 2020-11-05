@@ -13,10 +13,11 @@ function convertRestaurantsToCategories(restaurantList) {
   }
 
   const reply = Object.keys(result).map((category) => ({
-    y: result[category], 
+    y: result[category],
     label: category
   }));
 
+  // eslint-disable-next-line no-console
   console.log('reply', reply);
   return reply;
 }
